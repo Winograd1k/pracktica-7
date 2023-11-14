@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    setlocale(0, "");
+    int n_1, n, sum = 0, mnog = 1;
+    cout << "Введите число: ";
+    cin >> n;
+    while (n>0)
+    {
+       
+        n_1 = n % 10;
+        sum += n_1;
+        mnog *= n_1;
+        n = n / 10;
+
+
+    }
+    
+    cout << "сумма чисел: " << sum << endl;
+    cout << "Произведение чисел: " << mnog << endl;
+    
+
+    }
